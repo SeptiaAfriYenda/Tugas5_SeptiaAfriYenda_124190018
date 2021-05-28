@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU INPUT DATA"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/menu"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etnama"
+        android:hint="Nama"
+        android:layout_below="@id/menu" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etttl"
+        android:hint="Tanggal lahir (dd-mm-yyyy)"
+        android:layout_below="@id/etnama" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etnohp"
+        android:hint="No hp"
+        android:layout_below="@id/etttl" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etalamat"
+        android:hint="Alamat"
+        android:layout_below="@id/etnohp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etjumlah"
+        android:hint="Jumlah pinjaman"
+        android:layout_below="@id/etalamat" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etwaktu"
+        android:hint="Jangka waktu pinjaman (bulan)"
+        android:layout_below="@id/etjumlah" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsimpan"
+        android:text="Simpan"
+        android:layout_alignParentBottom="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcmenu"
+        android:layout_margin="4dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:layout_below="@id/etwaktu"
+        android:layout_above="@id/btnsimpan"/>
+
+</RelativeLayout>
